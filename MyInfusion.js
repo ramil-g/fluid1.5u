@@ -12854,7 +12854,7 @@ var initSliderAria = function (thumb, opts) {
 
 fluid.textfieldSlider.slider.init = function (that) {
     // To support backwards compatability, the range data can still be store in the model.
-    var sliderOptions = $.extend(true, {}, that.options.sliderOptions, that.model, that.options.range);
+    var sliderOptions = jQuery.extend(true, {}, that.options.sliderOptions, that.model, that.options.range);
 
     that.slider = that.container.slider(sliderOptions);
     initSliderAria(that.locate("thumb"), sliderOptions);
